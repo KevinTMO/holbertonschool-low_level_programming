@@ -10,7 +10,7 @@ int main(void)
 {
 	int alphrev;
 
-	for (alphrev = 'z'; alphrev <= 'a'; alphrev--)
+	for (alphrev = 'z'; alphrev >= 'a'; alphrev--)
 	{
 		putchar(alphrev);
 	}
