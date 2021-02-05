@@ -21,15 +21,18 @@ int main(void)
 			{
 				for (num4 = '0'; num4 <= '9'; num4++)
 				{
-					putchar(num1);
-					putchar(num2);
-					putchar(' ');
-					putchar(num3);
-					putchar(num4);
-					if (num1 != '9' || num2 != '9' || num3 != '9' || num4 != '9')
+					if (num1 == num2  || num2 == num3 || num3 == num4)
 					{
-						putchar(',');
+						putchar(num1);
+						putchar(num2);
 						putchar(' ');
+						putchar(num3);
+						putchar(num4);
+						if (num1 != '9' || num2 != '9' || num3 != '9' || num4 != '9')
+						{
+							putchar(',');
+							putchar(' ');
+						}
 					}
 				}
 			}
