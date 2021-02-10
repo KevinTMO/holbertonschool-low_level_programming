@@ -10,8 +10,9 @@
 int main(void)
 {
 	int num;
-	int sum = 0;
-	
+	int sum;
+
+	sum = 0;
 
 	for (num = 0; num < 1024; num++)
 	{
@@ -19,9 +20,9 @@ int main(void)
 		if ((num % 3 == 0) || (num % 5 == 0))
 		{
 			sum += num;
-			printf("%d", sum);
 		}
 	}
+	printf("%d", sum);
 	putchar('\n');
 	return (0);
 }
