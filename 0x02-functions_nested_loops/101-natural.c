@@ -10,11 +10,11 @@
 int main(void)
 {
 	int num;
-	int sum;
+	int sum = 0;
+	
 
 	for (num = 0; num < 1024; num++)
 	{
-		sum = 0;
 
 		if ((num % 3 == 0) || (num % 5 == 0))
 		{
