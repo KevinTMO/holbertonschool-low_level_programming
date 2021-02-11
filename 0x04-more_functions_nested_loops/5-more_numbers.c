@@ -1,8 +1,8 @@
 #include "holberton.h"
 
 /**
- *more_numbers - will print numbers from 0 to 14 ten times
- *Return: will not return a value (void)
+ * more_numbers - will print numbers from 0 to 14 ten times
+ * Return: will not return a value (void)
  */
 
 void more_numbers(void)
