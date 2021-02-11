@@ -20,8 +20,8 @@ void more_numbers(void)
 			}
 			else if (number >= 10)
 			{
-				_putchar((number / 10) + '0');
-				_putchar((number % 10) + '0');
+				_putchar('0' + (number / 10));
+				_putchar('0' + (number % 10));
 			}
 		}
 		_putchar('\n');
