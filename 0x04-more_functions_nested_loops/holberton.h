@@ -55,4 +55,10 @@ void print_line(int n);
 
 void print_diagonal(int n);
 
+/**
+ *print_square will print a square with size value
+ */
+
+void print_square(int size);
+
 #endif
