@@ -19,7 +19,7 @@ int _isupper(int c);
  *_isdigit will check for digits in the program between 0 and 9
  */
 
-int _isgidit(int c);
+int _isdigit(int c);
 
 /**
  *mul will multiply two variables
