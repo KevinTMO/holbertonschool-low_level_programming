@@ -61,4 +61,10 @@ void print_diagonal(int n);
 
 void print_square(int size);
 
+/**
+ *print_triangle will print exactly that, a triangle
+ */
+
+void print_triangle(int size);
+
 #endif
