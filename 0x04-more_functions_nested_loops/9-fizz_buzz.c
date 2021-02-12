@@ -21,7 +21,11 @@ int main(void)
 		}
 		else if ((numbers % 5) == 0)
 		{
-			printf("Buzz ");
+			printf("Buzz");
+			if (numbers != 100)
+			{
+				putchar(' ');
+			}
 		}
 		else
 			printf("%d ", numbers);
