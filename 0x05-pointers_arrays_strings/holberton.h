@@ -15,4 +15,10 @@ int _putchar(char c);
 
 void reset_to_98(int *n);
 
+/**
+ *int_swap - will swap the value of two pointers using a temp var
+ */
+
+void swap_int(int *a, int *b);
+
 #endif
