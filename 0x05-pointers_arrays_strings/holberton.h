@@ -39,4 +39,10 @@ void _puts(char *str);
 
 void print_rev(char *s);
 
+/**
+ *rev_string - will print a string in reverse order
+ */
+
+void rev_string(char *s);
+
 #endif
