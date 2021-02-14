@@ -27,4 +27,10 @@ void swap_int(int *a, int *b);
 
 int _strlen(char *s);
 
+/**
+ *_puts - will print the string of a pointer
+ */
+
+void _puts(char *str);
+
 #endif
