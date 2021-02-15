@@ -45,4 +45,10 @@ void print_rev(char *s);
 
 void rev_string(char *s);
 
+/**
+ *puts2 - will print the next character of a string
+ */
+
+void puts2(char *str);
+
 #endif
