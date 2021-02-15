@@ -9,7 +9,8 @@
 
 char *_strcpy(char *dest, char *src)
 {
-	int index, sindex;
+	int index;
+	int sindex;
 
 	for (index = 0; src[index] != '\0'; index++)
 	{
@@ -17,7 +18,7 @@ char *_strcpy(char *dest, char *src)
 	}
 	for (sindex = 0; sindex <= index; sindex++)
 	{
-	        dest[sindex] = src[index];
+	        dest[sindex] = src[sindex];
 	}
 	return (dest);
 }
