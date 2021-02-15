@@ -51,4 +51,10 @@ void rev_string(char *s);
 
 void puts2(char *str);
 
+/**
+ *puts_half will print the other half of a string
+ */
+
+void puts_half(char *str);
+
 #endif
