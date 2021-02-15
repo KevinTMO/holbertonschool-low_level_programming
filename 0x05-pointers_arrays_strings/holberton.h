@@ -57,4 +57,10 @@ void puts2(char *str);
 
 void puts_half(char *str);
 
+/**
+ *print_array - will print all the values of the array
+ */
+
+void print_array(int *a, int n);
+
 #endif
