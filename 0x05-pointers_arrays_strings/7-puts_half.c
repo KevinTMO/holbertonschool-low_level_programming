@@ -15,7 +15,7 @@ void puts_half(char *str)
 	{
 		;
 	}
-	if (index % 2 == 0)
+	if ((index % 2) == 0)
 	{
 		sindex = (index / 2);
 	}
