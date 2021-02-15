@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 
 /**
  *print_array - will print the value of the array
@@ -24,4 +25,5 @@ void print_array(int *a, int n)
 			printf("%d, ", a[index]);
 		}
 	}
+	putchar('\n');
 }
