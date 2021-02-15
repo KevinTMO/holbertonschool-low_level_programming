@@ -63,4 +63,10 @@ void puts_half(char *str);
 
 void print_array(int *a, int n);
 
+/**
+ *_strcpy - will copy the values of one pointer to another
+ */
+
+char *_strcpy(char *dest, char *src);
+
 #endif
