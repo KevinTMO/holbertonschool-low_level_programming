@@ -22,6 +22,7 @@ void puts_half(char *str)
 	else
 	{
 		sindex = (index - 1 / 2);
+		sindex++;
 	}
 	for (; sindex < index; sindex++)
 	{
