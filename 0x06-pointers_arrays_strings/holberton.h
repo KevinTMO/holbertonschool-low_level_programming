@@ -49,5 +49,10 @@ char *string_toupper(char *s);
 
 char *cap_string(char *s);
 
+/**
+ *leet - will change letter(upper and lower) for numbers
+ */
+
+char *leet(char *s);
 
 #endif
