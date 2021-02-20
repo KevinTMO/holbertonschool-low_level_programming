@@ -55,4 +55,10 @@ char *cap_string(char *s);
 
 char *leet(char *s);
 
+/**
+ *rot13 - will swap letter using Rot13 alphabet
+ */
+
+char *rot13(char *s);
+
 #endif
