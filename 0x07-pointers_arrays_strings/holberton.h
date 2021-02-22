@@ -10,7 +10,7 @@
 int _putchar(char c);
 
 /**
- *_memset - will fill a memory block
+ *memset - will fill a memory block
  */
 
 char *_memset(char *s, char b, unsigned int n);
