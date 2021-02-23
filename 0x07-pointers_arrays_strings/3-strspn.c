@@ -19,10 +19,9 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			if (accept[sindex] == '\0')
 			{
-				sindex++;
-				return (sindex);
+				return (index);
 			}
 		}
 	}
-	return (sindex);
+	return (index);
 }
