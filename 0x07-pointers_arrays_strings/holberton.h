@@ -31,4 +31,10 @@ char *_strchr(char *s, char c);
 
 unsigned int _strspn(char *s, char *accept);
 
+/**
+ *_strpbrk - will iterate until the matched character
+ */
+
+char *_strpbrk(char *s, char *accept);
+
 #endif
