@@ -10,9 +10,9 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	unsigned int index;
+	int index = 0;
 
-	for (index = 0; haystack[index] != '\0'; haystack++)
+	for (; haystack[index] != '\0' && needle[index] != '\0'; haystack++)
 	{
 		while (haystack[index] == needle[index])
 		{
