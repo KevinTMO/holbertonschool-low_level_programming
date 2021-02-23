@@ -49,4 +49,11 @@ char *_strstr(char *haystack, char *needle);
 
 void print_chessboard(char (*a)[8]);
 
+/**
+ *set_string - will change the value of a pointer point to another point with
+ *char value
+ */
+
+void set_string(char **s, char *to);
+
 #endif
