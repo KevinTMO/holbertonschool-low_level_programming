@@ -17,10 +17,7 @@ char *_strstr(char *haystack, char *needle)
 	{
 		for (sindex = 0; needle[sindex] == haystack[index]; sindex++)
 		{
-			if (needle[sindex] == haystack[index])
-			{
-				return (&needle[sindex]);
-			}
+			return (&needle[sindex]);
 		}
 	}
 	return (0);
