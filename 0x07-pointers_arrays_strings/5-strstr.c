@@ -7,21 +7,27 @@
  *Return: will return the result of the pointer or NULL
  */
 
-
 char *_strstr(char *haystack, char *needle)
 {
-	int index;
-	int sindex;
+	char *start;
+	char *search;
 
-	for (index = 0; haystack[index] != '\0'; index++)
+	while (*haystack != '\0')
 	{
-		for (sindex = 0; needle[sindex] != '\0'; sindex++)
+		start = haystack;
+		search = needle;
+
+		while (*needle != '\0' && *search != '\0' && *search == *haystack)
 		{
-			if (haystack[index] == needle[0])
-			{
-				return (haystack + index);
-			}
+			haystack++;
+			search++;
 		}
+		if (*search == '\0')
+		{
+			return (start);
+		}
+
+		haystack = start + 1;
 	}
-	return (NULL);
+	return (0);
 }
