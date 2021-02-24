@@ -56,4 +56,10 @@ void print_chessboard(char (*a)[8]);
 
 void set_string(char **s, char *to);
 
+/**
+ *print_diagsums - will sum the values in diagonal from left to right
+ */
+
+void print_diagsums(int *a, int size);
+
 #endif
