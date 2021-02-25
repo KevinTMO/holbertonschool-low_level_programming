@@ -37,4 +37,16 @@ int factorial(int n);
 
 int _pow_recursion(int x, int y);
 
+/**
+ *square_root - will get the square root of a number
+ */
+
+int square_root(int n, int incre);
+
+/**
+ *_sqrt_recursion - compare the number with the square_root function
+ */
+
+int _sqrt_recursion(int n);
+
 #endif
