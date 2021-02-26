@@ -49,4 +49,16 @@ int square_root(int n, int incre);
 
 int _sqrt_recursion(int n);
 
+/**
+ *is_prime_number - will get the prime number
+ */
+
+int is_prime_number(int n);
+
+/**
+ *_get_prime_number - will get the prime number and compare it with n
+ */
+
+int get_prime_number(int n, int incre);
+
 #endif
