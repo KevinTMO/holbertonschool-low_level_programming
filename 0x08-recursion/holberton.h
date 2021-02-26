@@ -61,4 +61,16 @@ int is_prime_number(int n);
 
 int get_prime_number(int n, int incre);
 
+/**
+ *string compare - will compare the normal string and rev
+ */
+
+int string_compare(char *s, int index);
+
+/**
+ *is_palindrome - will check if the string is palindrome
+ */
+
+int is_palindrome(char *s);
+
 #endif
