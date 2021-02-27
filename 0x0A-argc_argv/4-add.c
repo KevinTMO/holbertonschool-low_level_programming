@@ -12,7 +12,7 @@
 
 int main(int argc, char *argv[])
 {
-	int index;
+	int index = 1;
 	int sum = 0;
 
 	if (argc < 2)
@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		for (index = 1; argv[index]; index++)
+		while (argv[index])
 		{
 			if (isdigit(*argv[index]) == 0)
 			{
@@ -30,6 +30,7 @@ int main(int argc, char *argv[])
 				return (1);
 			}
 			sum += atoi(argv[index]);
+			index++;
 		}
 		printf("%d\n", sum);
 	}
