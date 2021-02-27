@@ -13,25 +13,25 @@
 int main(int argc, char *argv[])
 {
 	int sum = 0;
-	int index = 1;
+	int index;
+	int sindex;
 
-	if (argc < 2)
+	if (argc < 1)
 	{
 		printf("0\n");
 	}
-	else
+	for (index = 1; index < argc; index++)
 	{
-		while (argv[index])
+		for (sindex = 0; argv[index][sindex]; sindex++)
 		{
-			if (isdigit(*argv[index]) == 0)
+			if (isalpha(argv[index][sindex]))
 			{
 				printf("Error\n");
 				return (1);
 			}
-			sum += atoi(argv[index]);
-			index++;
 		}
-		printf("%d\n", sum);
+		sum += atoi(argv[index]);
 	}
+	printf("%d\n", sum);
 	return (0);
 }
