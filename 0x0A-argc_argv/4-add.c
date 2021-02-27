@@ -1,6 +1,6 @@
 #include "holberton.h"
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 #include <ctype.h>
 
 /**
@@ -12,8 +12,8 @@
 
 int main(int argc, char *argv[])
 {
-	int index = 1;
 	int sum = 0;
+	int index = 1;
 
 	if (argc < 2)
 	{
@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 				printf("Error\n");
 				return (1);
 			}
-			sum = sum + atoi(argv[index]);
+			sum += atoi(argv[index]);
 			index++;
 		}
 		printf("%d\n", sum);
