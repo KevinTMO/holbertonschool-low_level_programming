@@ -17,21 +17,16 @@ char *str_concat(char *s1, char *s2)
 	{
 		s1 = 0;
 	}
-	else
-	{
-		for (index = 0; s1[index] != '\0'; index++)
-		{
-		}
-	}
 	if (s2 == 0)
 	{
 		s2 = 0;
 	}
-	else
+	for (index = 0; s1[index] != '\0'; index++)
 	{
-		for (sindex = 0; s2[sindex] != '\0'; sindex++)
-		{
-		}
+	}
+	for (sindex = 0; s2[sindex] != '\0'; sindex++)
+	{
+		;
 	}
 	sumsize = index + sindex + 1;
 	nstr = malloc(sizeof(char) * sumsize);
