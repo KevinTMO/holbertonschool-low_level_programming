@@ -32,7 +32,7 @@ char *_strdup(char *str)
 	}
 	else
 	{
-		for (sindex = 0; sindex < index; sindex++)
+		for (sindex = 0; sindex <= index; sindex++)
 		{
 			ch[sindex] = str[sindex];
 		}
