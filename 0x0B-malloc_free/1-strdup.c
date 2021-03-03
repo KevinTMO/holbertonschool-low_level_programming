@@ -40,8 +40,6 @@ char *_strdup(char *str)
 		}
 	}
 
-	ch[sindex] = '\0';
-
 	return (ch);
 	free(ch);
 }
