@@ -15,7 +15,7 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == 0)
 	{
-		return (NULL);
+		s1 = 0;
 	}
 	else
 	{
@@ -25,7 +25,7 @@ char *str_concat(char *s1, char *s2)
 	}
 	if (s2 == 0)
 	{
-		return (NULL);
+		s2 = 0;
 	}
 	else
 	{
@@ -47,7 +47,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		nstr[nindex] = s2[cindex];
 	}
-	nstr[nindex] = '\0';
+	nstr[index + sindex] = '\0';
 	return (nstr);
 	free(nstr);
 }
