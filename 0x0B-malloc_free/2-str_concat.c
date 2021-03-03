@@ -34,9 +34,11 @@ char *str_concat(char *s1, char *s2)
 		}
 	}
 	sumsize = index + sindex + 1;
-
 	nstr = malloc(sizeof(char) * sumsize);
-
+	if (nstr == 0)
+	{
+		return (NULL);
+	}
 	for (nindex = 0; nindex < index; nindex++)
 	{
 		nstr[nindex] = s1[nindex];
@@ -45,9 +47,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		nstr[nindex] = s2[cindex];
 	}
-
 	nstr[nindex] = '\0';
-
 	return (nstr);
 	free(nstr);
 }
