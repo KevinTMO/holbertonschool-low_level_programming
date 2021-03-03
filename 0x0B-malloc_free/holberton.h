@@ -13,6 +13,10 @@ int _putchar(char c);
 
 char *create_array(unsigned int size, char c);
 
+/**
+ *_strdup - will copy the string of on array to another using mallocs
+ */
 
+char *_strdup(char *str);
 
 #endif
