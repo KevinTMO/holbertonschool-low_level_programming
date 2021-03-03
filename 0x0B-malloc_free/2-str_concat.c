@@ -49,5 +49,4 @@ char *str_concat(char *s1, char *s2)
 	}
 	nstr[index + sindex] = '\0';
 	return (nstr);
-	free(nstr);
 }
