@@ -37,4 +37,10 @@ int **alloc_grid(int width, int height);
 
 void free_grid(int **grid, int height);
 
+/**
+ *argstostr - this will concatenate arguments strings
+ */
+
+char *argstostr(int ac, char **av);
+
 #endif
