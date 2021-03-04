@@ -24,7 +24,6 @@ char *argstostr(int ac, char **av)
 		{
 			;
 		}
-		result = 0;
 		result += sindex + 1;
 	}
 
@@ -46,6 +45,6 @@ char *argstostr(int ac, char **av)
 		ch[result] = '\n';
 		result++;
 	}
-
+	ch[result] = '\0';
 	return (ch);
 }
