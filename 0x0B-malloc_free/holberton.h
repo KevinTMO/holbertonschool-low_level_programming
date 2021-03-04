@@ -31,4 +31,10 @@ char *str_concat(char *s1, char *s2);
 
 int **alloc_grid(int width, int height);
 
+/**
+ *free_grid - will free the bytes of an array
+ */
+
+void free_grid(int **grid, int height);
+
 #endif
