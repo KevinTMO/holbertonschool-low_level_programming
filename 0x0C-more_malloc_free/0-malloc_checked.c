@@ -4,7 +4,6 @@
 /**
  *malloc_checked - will allocated memory using malloc
  *@b: is the variable holding the numbers
- *@mem: is the pointer getting the malloc function
  *Return: will return the pointer or exit if null with 98
  */
 
