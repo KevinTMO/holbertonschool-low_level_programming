@@ -12,15 +12,18 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *nstr;
-	unsigned int index = _strlen(s1);
-	unsigned int sindex = _strlen(s2);
-	unsigned int nindex, sumsize = 0;
+	unsigned int index, sindex, nindex, sumsize = 0;
 
 	if (s1 == 0)
 		s1 = "";
 	if (s2 == 0)
 		s2 = "";
-
+	for (index = 0; s1[index] != '\0'; index++)
+	{
+	}
+	for (sindex = 0; s2[sindex] != '\0'; sindex++)
+	{
+	}
 	if (n >= sindex)
 		sumsize = index + sindex;
 	else
