@@ -33,7 +33,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		nstr[nindex] = s1[nindex];
 	}
 	if (n >= sindex)
-		for (cindex = 0; cindex < sindex; cindex++)
+		for (cindex = 0; s2[cindex] != '\0'; cindex++)
 		{
 			nstr[nindex] = s2[cindex];
 			nindex++;
