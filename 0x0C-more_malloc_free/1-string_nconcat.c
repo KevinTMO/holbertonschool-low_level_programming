@@ -14,7 +14,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *nstr;
 	unsigned int index = _strlen(s1);
 	unsigned int sindex = _strlen(s2);
-	unsigned int sumsize, nindex, cindex;
+	unsigned int sumsize, nindex;
 
 	if (s1 == 0)
 		s1 = "";
@@ -33,9 +33,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		nstr[nindex] = s1[nindex];
 	}
 	if (n >= sindex)
-		for (cindex = 0; s2[cindex] != '\0'; cindex++)
+		for (sindex = 0; s2[sindex] != '\0'; sindex++)
 		{
-			nstr[nindex] = s2[cindex];
+			nstr[nindex] = s2[sindex];
 			nindex++;
 		}
 	else
