@@ -25,4 +25,10 @@ char *_strdup(char *str);
 
 char *str_concat(char *s1, char *s2);
 
+/**
+ *alloc_grid - create a 2 dimensional array step by step
+ */
+
+int **alloc_grid(int width, int height);
+
 #endif
