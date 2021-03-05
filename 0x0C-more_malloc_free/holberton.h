@@ -8,6 +8,12 @@
 int _strlen(char *s);
 
 /**
+ *_memcpy - will copy the elements of one array to another
+ */
+
+char *_memcpy(char *dest, char *src, unsigned int n);
+
+/**
  *malloc_checked - will allocated memory using malloc
  */
 
@@ -30,5 +36,11 @@ void *_calloc(unsigned int nmemb, unsigned int size);
  */
 
 int *array_range(int min, int max);
+
+/**
+ *_realloc - will allocate new memory to a new pointer
+ */
+
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 
 #endif
