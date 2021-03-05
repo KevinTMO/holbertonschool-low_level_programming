@@ -32,6 +32,5 @@ int *array_range(int min, int max)
 		array[index] = min;
 		min++;
 	}
-	array[index] = '\0';
 	return (array);
 }
