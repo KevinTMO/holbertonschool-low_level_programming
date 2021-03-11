@@ -22,7 +22,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 		if (string == '\0')
 		{
-			printf("(nil)");
+			string = "(nil)";
 		}
 		printf("%s", string);
 
