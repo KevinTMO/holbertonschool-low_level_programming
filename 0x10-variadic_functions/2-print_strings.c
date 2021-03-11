@@ -21,7 +21,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		string = va_arg(args, char*);
 		if (string == '\0')
 		{
-			string = ("(Nil)");
+			string = "(Nil)";
 		}
 		printf("%s", string);
 
