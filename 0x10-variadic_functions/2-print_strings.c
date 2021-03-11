@@ -1,10 +1,10 @@
 #include "variadic_functions.h"
 
 /**
- *
- *
- *
- *
+ *print_strings - will print a string using variadic
+ *@separator: will print comma and space after string
+ *@n: is the total of arguments
+ *Return: will return void (nothing)
  */
 
 void print_strings(const char *separator, const unsigned int n, ...)
