@@ -19,7 +19,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	for (index = 0; index < n; index++)
 	{
 		string = va_arg(args, char*);
-		if (string == '\0')
+		if (string == NULL)
 		{
 			string = "(Nil)";
 		}
