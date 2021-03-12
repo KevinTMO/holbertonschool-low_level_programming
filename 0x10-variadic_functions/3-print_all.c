@@ -74,7 +74,7 @@ void print_all(const char * const format, ...)
 	va_start(args, format);
 
 	index = 0;
-	while (format[index] != '\0')
+	while (format[index] != '\0' && format != NULL)
 	{
 		sindex = 0;
 		while (func[sindex].opsym != NULL)
