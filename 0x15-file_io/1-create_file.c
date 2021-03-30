@@ -18,10 +18,10 @@ int _strlen(char *s)
 }
 
 /**
- *
- *
- *
- *
+ *create_file - will create a file with write flag or truncate if got something
+ *@filename: will the be the file to create
+ *@text_contet: will be the content for the file
+ *Return: will return 1 if sucess or -1 if fails
  */
 
 int create_file(const char *filename, char *text_content)
