@@ -28,7 +28,7 @@ int create_file(const char *filename, char *text_content)
 {
 	int fd, _write;
 
-	if (filename == NULL && text_content == NULL)
+	if (filename == NULL || text_content == NULL)
 	{
 		return (-1);
 	}
