@@ -75,7 +75,7 @@ int main(int argc, char *argv[])
 		}
 	}
 
-	close(fd_from) == -1 ? (__exit(100, NULL, fd_from)) : close(fd_from);
-	close(fd_to) == -1 ? (__exit(100, NULL, fd_to)) : close(fd_to);
+	close(fd_from) == -1 ? (__exit(100, argv[1], fd_from)) : close(fd_from);
+	close(fd_to) == -1 ? (__exit(100, argv[2], fd_to)) : close(fd_to);
 	return (0);
 }
