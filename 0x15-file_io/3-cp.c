@@ -19,7 +19,7 @@ int __exit(int error, char *str, int fd)
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", str);
 		exit(98);
 	case 99:
-		dprintf(STDERR_FILENO, "Error: Can't write to file %s\n", str);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", str);
 		exit(99);
 	case 100:
 		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", fd);
