@@ -37,7 +37,7 @@ int __exit(int error, char *str, int fd)
  *Return: will return 98, 99 or 100 if fails || return 0 if sucess
  */
 
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
 	int fd_from, fd_to, _read, _write;
 	char *buffer[1024];
