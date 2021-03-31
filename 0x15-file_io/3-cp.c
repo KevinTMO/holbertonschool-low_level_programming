@@ -22,7 +22,7 @@ int __exit(int error, char *str, int fd)
 		dprintf(STDERR_FILENO, "Error: Can't write to file %s\n", str);
 		exit(error);
 	case 100:
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", fd);
 		exit(error);
 	default:
 		return (0);
