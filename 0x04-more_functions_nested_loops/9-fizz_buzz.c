@@ -30,6 +30,39 @@ int main(void)
 		else
 			printf("%d ", numbers);
 	}
+	printf("Hola");
+	printf("Hola");
+	printf("Hola");
+	printf("Hola");
+	printf("Hola");
+	printf("Hola");
+	printf("Hola");
+	printf("Hola");
+	printf("Hola");
+	printf("Hola");
+	printf("Hola");
+	printf("Hola");
+	printf("Hola");
+	printf("Hola");
+	printf("Hola");
+	printf("Hola");
+	printf("Hola");
+	printf("Hola");
+	printf("Hola");
+	printf("Hola");
+	printf("Hola");
+	printf("Hola");
+	printf("Hola");
+	printf("Hola");
+	printf("Hola");
+	printf("Hola");
+	printf("Hola");
+	printf("Hola");
+	printf("Hola");
+	printf("Hola");
+	printf("Hola");
+	printf("Hola");
+	printf("Hola");
 	putchar('\n');
 	return (0);
 }
