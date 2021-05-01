@@ -56,7 +56,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	}
 
 	tmpNode = *h;
-	while (index < idx - 1)
+	while (index < idx)
 	{
 		tmpNode = tmpNode->next;
 		index++;
