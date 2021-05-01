@@ -8,19 +8,19 @@
 
 size_t dlistint_len(const dlistint_t *h)
 {
-        int count = 0;
+	int count = 0;
 
-        if (h == NULL)
-        {
-                return (0);
-        }
+	if (h == NULL)
+	{
+		return (0);
+	}
 
-        while (h != NULL)
-        {
-                count++;
-                h = h->next;
-        }
-        return (count);
+	while (h != NULL)
+	{
+		count++;
+		h = h->next;
+	}
+	return (count);
 }
 
 /**
@@ -72,9 +72,10 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		return (add_dnodeint_end(h, n));
 	}
 
-	new_node->next = tmpNode->next;
-	tmpNode->prev = new_node->prev;
-	tmpNode->next = new_node;
+	new_node->next = tmpNode;
+	new_node->prev = tmpNode->prev;
+	tmpNode->prev->next = new_node;
+	tmpNode->prev = new_node;
 
 	return (new_node);
 }
