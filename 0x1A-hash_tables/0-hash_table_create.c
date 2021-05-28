@@ -28,16 +28,15 @@ hash_table_t *hash_table_create(unsigned long int size)
 	if (new_table->array == NULL)
 	{
 		free(new_table);
-		free(new_table->array);
 		return (NULL);
 	}
-
-	new_table->size = size;
 
 	for (index = 0; index < size; index++)
 	{
 		new_table->array[index] = NULL;
 	}
+
+	new_table->size = size;
 
 	return (new_table);
 }
