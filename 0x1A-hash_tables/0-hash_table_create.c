@@ -33,7 +33,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 		new_table->array[index] = NULL;
 	}
 
-	free(new_table);
-	return (new_table);
+	new_table->array = array;
 
+	return (new_table);
 }
