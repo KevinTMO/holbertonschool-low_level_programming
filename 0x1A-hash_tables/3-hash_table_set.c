@@ -45,7 +45,6 @@ int create_hash_node(hash_table_t *ht, const char *key, const char *value,
 	{
 		node->next = ht->array[index];
 	}
-
 	else
 	{
 		node->next = ht->array[index];
