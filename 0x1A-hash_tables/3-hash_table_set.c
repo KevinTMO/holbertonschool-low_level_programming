@@ -41,15 +41,15 @@ int create_hash_node(hash_table_t *ht, const char *key, const char *value,
 	node->key = kye;
 	node->value = val;
 
-	if (ht->array[index] == NULL)
+	if ((ht->array)[index] == NULL)
 	{
-		node->next = ht->array[index];
+		node->next = (ht->array)[index];
 	}
 	else
 	{
-		node->next = ht->array[index];
+		node->next = (ht->array)[index];
 	}
-	ht->array[index] = node;
+	(ht->array)[index] = node;
 
 	return (1);
 }
@@ -69,14 +69,14 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	size_t index;
 	char *val;
 
-	if (!ht || !ht->array || !key || strlen(key) == 0 || !value)
+	if (!ht || !(ht->array) || !key || strlen(key) == 0 || !value)
 	{
 		return (0);
 	}
 
 	index = key_index((const unsigned char *)key, ht->size);
 
-	node = ht->array[index];
+	node = (ht->array)[index];
 
 	while (node && (strcmp(key, node->key) == 1))
 	{
