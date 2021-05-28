@@ -1,7 +1,7 @@
 #include "hash_tables.h"
 
 /**
- *hash_table_print - will print the key && value of the hash table in that order
+ *hash_table_print - will print the key && value of the hash table in that ord
  *@ht: is the hash table with the key && values
  *Return: will return nothing (void)
  */
