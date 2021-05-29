@@ -23,10 +23,10 @@ void hash_table_delete(hash_table_t *ht)
 		return;
 	}
 
-	while(index < ht->size)
+	while (index < ht->size)
 	{
 		temp = (ht->array)[index];
-		while(temp)
+		while (temp)
 		{
 			current_node = temp->next;
 			free(temp->key);
