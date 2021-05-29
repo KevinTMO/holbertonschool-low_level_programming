@@ -1,10 +1,9 @@
 #include "hash_tables.h"
 
 /**
- *
- *
- *
- *
+ *hash_table_delete - will delete all the elements in the table
+ *@ht: is the hash table with the elements
+ *Return: will return nothing (void), just free
  */
 
 void hash_table_delete(hash_table_t *ht)
