@@ -12,9 +12,7 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	unsigned int iterative = 0;
 
 	if (head == NULL)
-	{
 		return (NULL);
-	}
 
 	while (iterative < index && head != NULL)
 	{
@@ -23,8 +21,7 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	}
 
 	if (iterative == index)
-	{
 		return (head);
-	}
+
 	return (0);
 }
