@@ -93,14 +93,9 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		tmpNode = tmpNode->next;
 	}
 
-	/**
-	 * In case the key is something else than not equal
-	 * Then check if there's NULL, but if not then update value of node
-	 * You need to duplicate because args key, value keeps changing
-	 */
-
-	if (tmpNode != NULL)
+	if (tmpNode != NULL) /* In case the key is something else than != */
 	{
+		/* Dup vals because args keep changing */
 		copyVal = strdup(value);
 		if (!copyVal)
 		{
