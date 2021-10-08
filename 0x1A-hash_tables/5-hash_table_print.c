@@ -25,7 +25,7 @@ void hash_table_print(const hash_table_t *ht)
 
 		if (tmpNode != NULL)
 		{
-			printf("%s'%s':'%s'", comSpace, tmpNode->key,
+			printf("%s'%s': '%s'", comSpace, tmpNode->key,
 			       tmpNode->value);
 			comSpace = ", ";
 			tmpNode = tmpNode->next;
