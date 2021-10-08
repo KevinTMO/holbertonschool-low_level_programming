@@ -13,15 +13,12 @@ int create_node(hash_table_t *ht, const char *key, const char *value,
 		unsigned long int index)
 {
 	hash_node_t *node;
-	char *copyKey;
-	char *copyValue;
+	char *copyKey, *copyValue;
 
 	node = malloc(sizeof(hash_node_t));
 
 	if (!node)
-	{
 		return (0);
-	}
 
 	copyKey = strdup(key);
 
@@ -44,16 +41,11 @@ int create_node(hash_table_t *ht, const char *key, const char *value,
 	node->value = copyValue;
 
 	/* In case there's no index to add the node */
-
 	if (ht->array[index] == NULL)
-	{
 		node->next = NULL;
-	}
 
 	else
-	{
 		node->next = ht->array[index];
-	}
 	ht->array[index] = node;
 
 	return (1);
