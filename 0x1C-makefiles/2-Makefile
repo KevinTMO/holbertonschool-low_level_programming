@@ -2,7 +2,7 @@
 
 CC = gcc
 SRC = main.c school.c
-OBJ = $(SRC: wildcard *.o)
+OBJ = $($(SRC) $(wildcard *.o))
 NAME = school
 
 all: m.h $(OBJ)
