@@ -1,5 +1,3 @@
-# Adding some more rules: clean, oclean, fclean
-
 CC = gcc
 SRC = main.c school.c
 OBJ = $(SRC: .c=.o)
